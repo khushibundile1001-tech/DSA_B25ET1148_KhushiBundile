@@ -1,0 +1,62 @@
+1. What is a string?
+Ans:
+ A string is a sequence or array of characters stored together in a character array. In C, a string is terminated by a special null character '\0'.
+________________________________________
+2. Explain string functions: strcmp(), strlen(), strcat(), strcpy().
+Ans:
+ These are predefined string handling functions available in the string.h header file.
+1.	strcmp() – It is used to compare two strings. It returns 0 when both strings are equal, a negative value when the first string is smaller, and a positive value when the first string is greater.
+2.	strlen() – It is used to find the length of a string. The null character '\0' is not included in the length.
+3.	strcat() – It is used to concatenate or join two strings. It appends the second string at the end of the first string.
+4.	strcpy() – It is used to copy the contents of one string into another string.
+________________________________________
+3. In string comparisons, if two strings are same, what will be the result of comparison?
+Ans:
+ If two strings are exactly the same, the strcmp() function returns 0.
+________________________________________
+4. What is the length of the string "Data Structures"?
+Ans:
+ The length of the string "Data Structures" is 15 characters. The space between the two words is also counted as one character, while the null character '\0' is not counted.
+________________________________________
+5. Explain how to use strcpy() function.
+Ans:
+ The strcpy() function is used to copy the contents of one string into another string.
+The syntax is:
+strcpy(destination, source);
+The destination string receives the contents of the source string. The destination must have sufficient memory to store the copied string. The function is defined in the string.h header file.
+________________________________________
+6. What is strncat() string function?
+Ans:
+ strncat() is a string handling function used to append the first n characters of one string to the end of another string.
+It is useful when only a specified number of characters from the source string need to be appended. It is available in the string.h header file.
+________________________________________
+7. What is strrev()?
+Ans:
+ strrev() is a string function used to reverse the characters of a string.
+After applying this function, the order of characters in the string is changed from last-to-first.
+Note: strrev() is not a standard C function and may not be available in all C compilers.
+________________________________________
+8. Which function is more appropriate for reading in a multi-word string?
+Ans:
+ The gets() function was traditionally used for reading a multi-word string because it can accept spaces between words.
+However, gets() is unsafe and has been removed from modern C standards because it can cause buffer overflow. Therefore, fgets() is the safer and recommended function for reading multi-word strings.
+________________________________________
+9. What are the applications of strings?
+Ans:
+ Strings are used for storing, processing and manipulating text data in computer programs.
+The main applications of strings are:
+1.	Storing names, words and sentences.
+2.	Comparing different strings.
+3.	Searching for characters or words.
+4.	Joining two or more strings.
+5.	Copying and modifying text.
+6.	Storing messages and other textual information.
+7.	Processing text-based data.
+8.	Handling input and output of textual information.
+________________________________________
+10. What is the limitation of an array of pointers to strings?
+Ans:
+ An array of pointers to strings stores the addresses of strings rather than the actual string characters.
+Its main limitation is that memory for storing the actual strings must be available separately. We cannot directly receive strings from the keyboard using scanf() through an uninitialized character pointer because the pointer does not automatically provide memory for storing the input.
+Therefore, proper memory allocation or a character array must be provided before accepting strings as input.
+
