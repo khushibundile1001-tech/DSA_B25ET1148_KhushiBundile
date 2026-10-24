@@ -1,0 +1,62 @@
+1. Define Data, Data Item and Entity.
+Ans:
+●	Data: Data refers to raw facts, values, or a set of values that can be processed by a computer.
+●	Data Item: A data item is a single unit or individual value of data.
+●	Entity: An entity is an object or thing that has a set of attributes, and each attribute can have a specific value.
+An entity can be described using its attributes and their corresponding values.
+2. Define Data Structure.
+Ans:
+ A data structure is a way of organizing and storing data in a computer so that it can be accessed and manipulated efficiently.
+It considers not only the data items being stored but also the relationship between those data items. Proper knowledge of these relationships helps in designing efficient algorithms for processing and manipulating data.
+3. What are the types of Data Structure? Give examples.
+Ans:
+ Data structures are mainly classified into:
+1.	Primitive Data Structures – Basic data types provided by a programming language.
+2.	Non-Primitive Data Structures – Data structures created using primitive data types.
+Non-primitive data structures are further classified into:
+●	Linear Data Structures: Data elements are arranged sequentially.
+ Examples: Arrays, Linked Lists, Stacks and Queues.
+●	Non-Linear Data Structures: Data elements are not arranged sequentially and may have hierarchical or network relationships.
+ Examples: Trees and Graphs.
+4. What is Nested Structure?
+Ans:
+ A nested structure is a structure in C that contains another structure as one of its members.
+In other words, when one structure is defined inside another structure or a structure variable is included as a member of another structure, it is called a nested structure.
+5. What are Unions?
+Ans:
+ A union is a user-defined data type in C that allows different data types to be grouped together under a single name.
+The main difference between a structure and a union is that all members of a union share the same memory location. Therefore, a union can store the value of only one member at a time.
+6. Compare Structure with Union.
+Ans:
+Structure	Union
+Each member has separate memory.	All members share the same memory.
+All members can store values at the same time.	Only one member can hold a meaningful value at a time.
+The size is generally related to the total memory required by its members.	The size is generally determined by its largest member.
+Changes in one member do not normally affect other members.	Storing a value in one member can overwrite the value of another member.
+7. What are the operators used to access data from structures?
+Ans:
+ There are two operators used to access structure members:
+1.	Dot operator (.) – Used to access a structure member through a structure variable.
+2.	Arrow operator (->) – Used to access a structure member through a pointer to the structure.
+8. What is an Array of Structure?
+Ans:
+ An array of structures is a collection of multiple structure variables of the same structure type stored under a single array name.
+To declare an array of structures, first a structure is defined and then an array of that structure type is declared. It is useful for storing and managing multiple records having the same set of attributes.
+9. List out the Applications of Structures.
+Ans:
+ Structures are used in many applications, such as:
+1.	Storing and managing records.
+2.	Database management systems.
+3.	Creating arrays of structures.
+4.	Representing complex data containing different data types.
+5.	Developing records for student, employee and other information systems.
+6.	Implementing data structures such as linked lists, trees and other dynamic structures.
+7.	Organizing related data into a single unit.
+10. How to access a Structure Member through a Pointer?
+Ans:
+ A structure member can be accessed through a pointer using the arrow (->) operator.
+The pointer stores the address of a structure variable, and the arrow operator is used to access the members of that structure through the pointer.
+Another method is to use the dereference operator (*) along with the dot (.) operator.
+Therefore, structure members can be accessed through pointers mainly by using:
+1.	Arrow operator (->)
+2.	Dereferencing the pointer and using the dot operator (.)
