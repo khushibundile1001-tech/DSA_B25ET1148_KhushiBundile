@@ -1,0 +1,70 @@
+1. What is LIFO structure of Stack?
+Ans:
+ Stack follows the LIFO (Last In, First Out) principle. In a stack, insertion and deletion of elements take place only from the top. Therefore, the element that is inserted last is the first element to be removed.
+________________________________________
+2. How is Stack represented?
+Ans:
+ A stack can be represented using:
+1.	Array
+2.	Linked List
+In array representation, elements are stored in consecutive memory locations and a top variable keeps track of the top element.
+In linked-list representation, elements are stored in nodes, and a pointer keeps track of the top node.
+________________________________________
+3. What are the possible operations with Stack?
+Ans:
+ The main operations performed on a stack are:
+1.	PUSH() – Inserts an element into the stack.
+2.	POP() – Removes the top element from the stack.
+3.	StackEmpty() – Checks whether the stack is empty.
+4.	StackFull() – Checks whether the stack is full.
+________________________________________
+4. Explain the Stack Full and Stack Empty conditions.
+Ans:
+Stack Full:
+ A stack is said to be full when there is no space available for inserting another element. For an array of size MAX, the stack is full when:
+top == MAX - 1
+Stack Empty:
+ A stack is said to be empty when it does not contain any element. If top is initialized to -1, the empty condition is:
+top == -1
+Important correction: If your program uses top = 0 to represent an empty stack, then the condition can be top == 0. It depends on how top is initialized and how PUSH/POP are implemented.
+________________________________________
+5. Explain push() function in C for Stack using Array.
+Ans:
+ The push() function is used to insert an element into the stack.
+The given function first increases the value of top by one and then stores the new element at that position.
+void push(stack *s, int x)
+{
+    s->top = s->top + 1;
+    s->data[s->top] = x;
+}
+Working:
+1.	The address of the stack is passed using a pointer.
+2.	top is increased by one.
+3.	The new element x is stored at the new top position.
+Before performing PUSH, the stack should be checked for the stack full condition.
+________________________________________
+6. Explain pop() function in C for Stack using Array.
+Ans:
+ The pop() function is used to remove the top element from the stack.
+int pop(stack *s)
+{
+    int x;
+
+    x = s->data[s->top];
+    s->top = s->top - 1;
+    return(x);
+}
+Working:
+1.	The element at the current top position is stored in x.
+2.	The value of top is decreased by one.
+3.	The removed element is returned by the function.
+Before performing POP, the stack should be checked for the stack empty condition.
+________________________________________
+7. Explain the concept of Double Pointer.
+Ans:
+ A double pointer is a pointer that stores the address of another pointer. It is also called a pointer to a pointer.
+It is declared using two asterisks:
+int **p;
+Here, p is a double pointer. It stores the address of a pointer variable.
+Double pointers are useful when a pointer itself needs to be accessed or modified through another pointer.
+
