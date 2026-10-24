@@ -1,0 +1,7 @@
+Q1. What is the time complexity of Bubble Sort?
+ Ans: The time complexity of Bubble Sort is O(n²) in the average and worst cases because it repeatedly compares adjacent elements and may require multiple passes through the array.
+Q2. Which sort is most efficient for small datasets?
+ Ans: Insertion Sort is generally considered efficient for small datasets because it is simple, requires less overhead, and performs well when the number of elements is small or the data is nearly sorted.
+Q3. Is Quick Sort stable?
+ Ans: No, Quick Sort is generally not stable. It may change the relative order of equal elements during the partitioning process.
+
